@@ -1,0 +1,223 @@
+/* Control Panel */
+.controlPanel {
+  background-color: #F2F2F2;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.controlContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Record Button */
+.recordButton {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.recordButton:disabled {
+  cursor: not-allowed;
+}
+
+.audioRing {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 3px solid #DC2626;
+  transition: all 0.1s ease;
+}
+
+.stopIcon {
+  width: 24px;
+  height: 24px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+/* Spinners */
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #B3B3B3;
+  border-top-color: #FFFFFF;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.spinnerSmall {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #B3B3B3;
+  border-top-color: #6B7280;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Status */
+.statusText {
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+
+.statusWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusWithIcon span {
+  font-weight: 500;
+  color: #121212;
+}
+
+.recordingDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #DC2626;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.sessionId {
+  font-size: 12px;
+  color: #666666;
+  font-family: monospace;
+}
+
+/* Error Banner */
+.errorBanner {
+  background-color: #FEF2F2;
+  border: 1px solid #FECACA;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  color: #DC2626;
+  font-size: 14px;
+}
+
+/* Columns Layout */
+.columnsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.columnHeader {
+  font-size: 14px;
+  font-weight: 600;
+  color: #121212;
+  margin-bottom: 12px;
+}
+
+.columnContent {
+  background-color: #F2F2F2;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.emptyState {
+  color: #666666;
+  font-size: 14px;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Transcript */
+.transcriptText {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #121212;
+}
+
+.interimText {
+  color: #666666;
+  font-style: italic;
+}
+
+/* Facts */
+.factCount {
+  font-weight: 400;
+  color: #666666;
+}
+
+.factsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.factGroupLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.factsList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.factItem {
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #121212;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.credits {
+  font-size: 12px;
+  color: #666666;
+}
+
+.resetButton {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid #B3B3B3;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #666666;
+  cursor: pointer;
+}
+
+.resetButton:disabled {
+  cursor: not-allowed;
+}

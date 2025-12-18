@@ -1,0 +1,64 @@
+.container {
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  font-family: Inter, -apple-system, sans-serif;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid #F2F2F2;
+  padding: 24px 24px 0;
+}
+
+.headerContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #121212;
+  margin: 0 0 8px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666666;
+  margin: 0 0 24px;
+}
+
+/* Tab Header */
+.tabHeader {
+  display: flex;
+  gap: 0;
+  margin: 0 -12px auto;
+  padding: 16px 12px;
+  background-color: #FFFFFF;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.tabTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #121212;
+}
+
+.tabSubtitle {
+  font-size: 12px;
+  color: #B3B3B3;
+  display: block;
+  margin-top: 2px;
+}
+
+/* Content */
+.content {
+  padding: 32px 24px 48px;
+}
+
+.contentInner {
+  max-width: 900px;
+  margin: 0 auto;
+}

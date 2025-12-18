@@ -1,0 +1,242 @@
+.container {
+  margin-top: 32px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #121212;
+  margin-bottom: 16px;
+}
+
+/* Controls */
+.controls {
+  background-color: #F2F2F2;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.controlsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: end;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 6px;
+}
+
+.staticField {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #B3B3B3;
+  background-color: #F2F2F2;
+  font-size: 14px;
+  color: #666666;
+  box-sizing: border-box;
+}
+
+.select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #B3B3B3;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  color: #121212;
+  cursor: pointer;
+}
+
+.select:disabled {
+  cursor: not-allowed;
+}
+
+.generateButton {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.generateButton:disabled {
+  cursor: not-allowed;
+}
+
+.buttonSpinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top-color: #FFFFFF;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.helperText {
+  font-size: 12px;
+  color: #666666;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+/* Error */
+.errorBanner {
+  background-color: #FEF2F2;
+  border: 1px solid #FECACA;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  color: #DC2626;
+  font-size: 14px;
+}
+
+/* Document Container */
+.documentContainer {
+  background-color: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.documentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #F2F2F2;
+  background-color: #F2F2F2;
+}
+
+.documentTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #121212;
+}
+
+.documentMeta {
+  font-size: 12px;
+  color: #666666;
+}
+
+.documentActions {
+  display: flex;
+  gap: 8px;
+}
+
+/* View Toggle */
+.viewToggle {
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #B3B3B3;
+}
+
+.toggleActive {
+  padding: 6px 12px;
+  border: none;
+  background-color: #121212;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.toggleInactive {
+  padding: 6px 12px;
+  border: none;
+  background-color: #FFFFFF;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Download Button */
+.downloadButton {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #B3B3B3;
+  background-color: #FFFFFF;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Document Content */
+.documentContent {
+  padding: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionTitle {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #121212;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #F2F2F2;
+}
+
+.sectionText {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #2B2B28;
+  white-space: pre-wrap;
+}
+
+.noContent {
+  color: #B3B3B3;
+  font-style: italic;
+}
+
+.emptyDocument {
+  color: #666666;
+  text-align: center;
+  padding: 40px;
+}
+
+.jsonView {
+  margin: 0;
+  padding: 16px;
+  background-color: #2B2B28;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #F2F2F2;
+  overflow: auto;
+  font-family: 'JetBrains Mono', Monaco, monospace;
+}
