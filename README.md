@@ -11,6 +11,7 @@ This sample app demonstrates:
 - **FactsR™ Clinical Reasoning**: Automatic fact extraction of structured medical data (chief complaint, vitals, medications, allergies, etc.)
 - **Document Generation**: Generate SOAP notes from extracted facts in 10+ languages
 
+
 ![Corti JavaScript SDK Demo UI Overview](assets/demo-ui.png)
 
 ## What the SDK Does For You
